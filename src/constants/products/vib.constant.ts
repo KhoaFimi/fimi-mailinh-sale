@@ -38,7 +38,7 @@ export const vib = (code: string) =>
 			group: 'vib',
 			name: 'VIB - Travel',
 			link: `https://www.vib.com.vn/vn/the-tin-dung/dang-ky/buoc-1?card_type=vib-travel-eilte&utm_source=REFERCARD&utm_medium=REFER_CARD&utm_content=Affiliate_FIMIVIB-${code}`,
-			priority: 3,
+			priority: 4,
 			condition: {
 				age: 20,
 				income: 20000000,
@@ -56,7 +56,7 @@ export const vib = (code: string) =>
 			group: 'vib',
 			name: 'VIB - Premire Boundless',
 			link: `https://www.vib.com.vn/vn/the-tin-dung/dang-ky/buoc-1?card_type=vib-premier-boundless&utm_source=REFERCARD&utm_medium=REFER_CARD&utm_content=Affiliate_FIMIVIB-${code}`,
-			priority: 3,
+			priority: 4,
 			condition: {
 				age: 20,
 				income: 20000000,
@@ -74,7 +74,7 @@ export const vib = (code: string) =>
 			group: 'vib',
 			name: 'VIB - Super Card',
 			link: `https://www.vib.com.vn/vn/the-tin-dung/dang-ky/buoc-1?card_type=vib-supercard&utm_source=Public_Website&utm_medium=Affiliate_FIMIVIB-${code}-&utm_content=Affiliate_FIMIVIB-${code}`,
-			priority: 3,
+			priority: 4,
 			condition: {
 				age: 20,
 				income: 10000000,
@@ -93,7 +93,7 @@ export const vib = (code: string) =>
 			group: 'vib',
 			name: 'VIB - Super Card',
 			link: `https://www.vib.com.vn/vn/the-tin-dung/dang-ky/buoc-1?card_type=vib-onlineplus-2in1&utm_source=Public_Website&utm_medium=Affiliate_FIMIVIB-${code}-&utm_content=Affiliate_FIMIVIB-${code}`,
-			priority: 3,
+			priority: 4,
 			condition: {
 				age: 20,
 				income: 7000000,
@@ -111,7 +111,7 @@ export const vib = (code: string) =>
 			group: 'vib',
 			name: 'VIB - Cash Back',
 			link: `https://www.vib.com.vn/vn/the-tin-dung/dang-ky/buoc-1?card_type=vib-cashback&utm_source=REFERCARD&utm_medium=REFER_CARD&utm_content=Affiliate_FIMIVIB-${code}`,
-			priority: 3,
+			priority: 4,
 			condition: {
 				age: 20,
 				income: 15000000,
@@ -129,7 +129,7 @@ export const vib = (code: string) =>
 			group: 'vib',
 			name: 'VIB - Family Link',
 			link: `https://www.vib.com.vn/vn/the-tin-dung/dang-ky/buoc-1?card_type=vib-family-link&utm_source=REFERCARD&utm_medium=REFER_CARD&utm_content=Affiliate_FIMIVIB-${code}`,
-			priority: 3,
+			priority: 4,
 			condition: {
 				age: 20,
 				income: 15000000,
@@ -147,7 +147,7 @@ export const vib = (code: string) =>
 			group: 'vib',
 			name: 'VIB - Financial Free',
 			link: `https://wwww.vib.com.vn/vn/the-tin-dung/dang-ky/buoc-1?card_type=vib-financial-free&utm_source=REFERCARD&utm_medium=REFER_CARD&utm_content=Affiliate_FIMIVIB-${code}`,
-			priority: 3,
+			priority: 4,
 			condition: {
 				age: 20,
 				income: 7000000,
@@ -165,7 +165,7 @@ export const vib = (code: string) =>
 			group: 'vib',
 			name: 'VIB - Lazcard',
 			link: `https://www.vib.com.vn/vn/the-tin-dung/dang-ky/buoc-1?card_type=vib-lazcard&utm_source=REFERCARD&utm_medium=REFER_CARD&utm_content=Affiliate_FIMIVIB-${code}`,
-			priority: 3,
+			priority: 4,
 			condition: {
 				age: 20,
 				income: 15000000,
@@ -183,7 +183,7 @@ export const vib = (code: string) =>
 			group: 'vib',
 			name: 'VIB - Reward Unlimited',
 			link: `https://www.vib.com.vn/vn/the-tin-dung/dang-ky/buoc-1?card_type=vib-rewards-unlimited&utm_source=REFERCARD&utm_medium=REFER_CARD&utm_content=Affiliate_FIMIVIB-${code}`,
-			priority: 3,
+			priority: 4,
 			condition: {
 				age: 20,
 				income: 10000000,
@@ -201,7 +201,7 @@ export const vib = (code: string) =>
 			group: 'vib',
 			name: 'VIB - Ivy Card',
 			link: `https://www.vib.com.vn/vn/the-tin-dung/dang-ky/buoc-1?card_type=vib-ivycard&utm_source=Public_Website&utm_medium=Affiliate_FIMIVIB-${code}&utm_content=Affiliate_FIMIVIB-${code}`,
-			priority: 3,
+			priority: 4,
 			condition: {
 				age: 20,
 				income: 5000000,

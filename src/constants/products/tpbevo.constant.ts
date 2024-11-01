@@ -40,7 +40,7 @@ export const tbpevo = (code: string) =>
 			name: 'TPBank EVO',
 			group: 'tp',
 			link: `https://evocard.tpb.vn/?utm_source=avay_afffimi&utm_campaign=First&utm_medium=${code}`,
-			priority: 4,
+			priority: 2,
 			condition: {
 				age: 22,
 				income: 7000000,
