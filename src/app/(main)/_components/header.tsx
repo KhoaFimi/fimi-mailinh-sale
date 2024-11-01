@@ -16,7 +16,7 @@ const Header = () => {
 					className='w-20'
 				/>
 				<div
-					className={`h-[35px] w-[1px] bg-gradient-to-br from-primary to-primary/50`}
+					className={`h-[35px] w-[3px] bg-gradient-to-br from-primary to-primary/50`}
 				/>
 				<Image
 					src='/logo-mailinh.png'

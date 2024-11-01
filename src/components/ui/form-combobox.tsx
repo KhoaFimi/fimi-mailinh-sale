@@ -59,9 +59,9 @@ const FormCombobox: FC<FormComboboxProps> = ({
 			name={name}
 			render={({ field }) => (
 				<FormItem className='flex flex-col'>
-					<div className='flex items-end space-x-2 text-foreground/70'>
+					<div className='flex items-end space-x-2 text-foreground/70 text-white'>
 						<Building2 className='size-5' />
-						<FormLabel>{label}</FormLabel>
+						<FormLabel className='font-semibold'>{label}</FormLabel>
 					</div>
 					<Popover>
 						<PopoverTrigger
@@ -73,7 +73,7 @@ const FormCombobox: FC<FormComboboxProps> = ({
 									variant='outline'
 									role='combobox'
 									className={cn(
-										'w-full justify-between border border-foreground/30 bg-transparent',
+										`w-full justify-between border border-foreground/30 bg-background`,
 										!field.value && 'text-muted-foreground'
 									)}
 								>
@@ -85,7 +85,7 @@ const FormCombobox: FC<FormComboboxProps> = ({
 							</FormControl>
 						</PopoverTrigger>
 						<PopoverContent
-							className='w-[335px] border border-foreground/30 p-0'
+							className='w-[300px] border border-foreground/30 p-0'
 							side='bottom'
 							align='start'
 						>

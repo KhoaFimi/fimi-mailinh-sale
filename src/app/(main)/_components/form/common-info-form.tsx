@@ -50,126 +50,162 @@ const CommonInfoForm = () => {
 			<Form {...form}>
 				<form
 					onSubmit={form.handleSubmit(values => mutate(values))}
-					className='w-full px-6'
+					className='w-full px-3'
 				>
-					<div className='space-y-6'>
-						<FormField
-							name='publisherCode'
-							control={form.control}
-							render={({ field }) => (
-								<FormItem>
-									<div className='flex items-end space-x-2 text-foreground/70'>
-										<HandCoins className='size-5' />
-										<FormLabel>Mã giới thiệu</FormLabel>
-									</div>
-									<FormControl>
-										<Input
-											placeholder='FIMIxxxxx'
-											className='focus-visible:outline-none focus-visible:ring-0'
-											{...field}
-										/>
-									</FormControl>
-								</FormItem>
-							)}
-						/>
-						<FormField
-							name='fullname'
-							control={form.control}
-							render={({ field }) => (
-								<FormItem>
-									<div className='flex items-end space-x-2 text-foreground/70'>
-										<User className='size-5' />
-										<FormLabel>Họ và tên</FormLabel>
-									</div>
-									<FormControl>
-										<Input
-											placeholder='Nguyễn Văn A'
-											className='focus-visible:outline-none focus-visible:ring-0'
-											{...field}
-										/>
-									</FormControl>
-								</FormItem>
-							)}
-						/>
-						<FormField
-							name='email'
-							control={form.control}
-							render={({ field }) => (
-								<FormItem>
-									<div className='flex items-end space-x-2 text-foreground/70'>
-										<Mail className='size-5' />
-										<FormLabel>Email</FormLabel>
-									</div>
-									<FormControl>
-										<Input
-											placeholder='john.doe@gmail.com'
-											className='focus-visible:outline-none focus-visible:ring-0'
-											{...field}
-										/>
-									</FormControl>
-								</FormItem>
-							)}
-						/>
-						<FormField
-							name='phone'
-							control={form.control}
-							render={({ field }) => (
-								<FormItem>
-									<div className='flex items-end space-x-2 text-foreground/70'>
-										<Phone className='size-5' />
-										<FormLabel>Số điện thoại</FormLabel>
-									</div>
-									<FormControl>
-										<Input
-											placeholder='0915xxxx00'
-											className='focus-visible:outline-none focus-visible:ring-0'
-											{...field}
-										/>
-									</FormControl>
-								</FormItem>
-							)}
-						/>
-						<FormCombobox
-							name='city'
-							label='Khu vực'
-							isLoading={isPending}
-							control={form.control}
-							form={form}
-							initalData='Thành phố'
-							items={cities}
-							isMessage
-						/>
-						<FormField
-							name='tnc'
-							control={form.control}
-							render={({ field }) => (
-								<FormItem
-									className={`
-           flex flex-row items-start space-x-3 space-y-0 rounded-md border p-4
-           shadow
-         `}
-								>
-									<FormControl>
-										<Checkbox
-											checked={field.value}
-											onCheckedChange={field.onChange}
-										/>
-									</FormControl>
-									<div className='space-y-1 leading-none'>
-										<FormLabel className='text-sm text-foreground/70'>
-											Bằng việc xác nhận, bạn đồng ý với
-										</FormLabel>
-									</div>
-								</FormItem>
-							)}
-						/>
-						<Button
-							type='submit'
-							disabled={!form.getFieldState('tnc').isDirty || isPending}
-							className='w-full'
+					<div className='space-y-2'>
+						<div
+							className={`
+         flex flex-col space-y-6 rounded-2xl border bg-gradient-to-tr
+         from-primary from-30% to-[#e81e25] px-4 py-8 shadow-lg
+       `}
 						>
-							Tiếp tục
-						</Button>
+							<FormField
+								name='publisherCode'
+								control={form.control}
+								render={({ field }) => (
+									<FormItem>
+										<div className='flex items-end space-x-2 text-foreground/70 text-white'>
+											<HandCoins className='size-5' />
+											<FormLabel className='font-semibold'>
+												Mã giới thiệu
+											</FormLabel>
+										</div>
+										<FormControl>
+											<Input
+												placeholder='FIMIxxxxx'
+												className={`
+              bg-background caret-primary
+
+              focus-visible:outline-none focus-visible:ring-0
+            `}
+												{...field}
+											/>
+										</FormControl>
+									</FormItem>
+								)}
+							/>
+							<FormField
+								name='fullname'
+								control={form.control}
+								render={({ field }) => (
+									<FormItem>
+										<div className='flex items-end space-x-2 text-foreground/70 text-white'>
+											<User className='size-5' />
+											<FormLabel className='font-semibold'>Họ và tên</FormLabel>
+										</div>
+										<FormControl>
+											<Input
+												placeholder='Nguyễn Văn A'
+												className={`
+              bg-background caret-primary
+
+              focus-visible:outline-none focus-visible:ring-0
+            `}
+												{...field}
+											/>
+										</FormControl>
+									</FormItem>
+								)}
+							/>
+							<FormField
+								name='email'
+								control={form.control}
+								render={({ field }) => (
+									<FormItem>
+										<div className='flex items-end space-x-2 text-foreground/70 text-white'>
+											<Mail className='size-5' />
+											<FormLabel className='font-semibold'>Email</FormLabel>
+										</div>
+										<FormControl>
+											<Input
+												placeholder='john.doe@gmail.com'
+												className={`
+              bg-background caret-primary
+
+              focus-visible:outline-none focus-visible:ring-0
+            `}
+												{...field}
+											/>
+										</FormControl>
+									</FormItem>
+								)}
+							/>
+							<FormField
+								name='phone'
+								control={form.control}
+								render={({ field }) => (
+									<FormItem>
+										<div className='flex items-end space-x-2 text-foreground/70 text-white'>
+											<Phone className='size-5' />
+											<FormLabel className='font-semibold'>
+												Số điện thoại
+											</FormLabel>
+										</div>
+										<FormControl>
+											<Input
+												placeholder='0915xxxx00'
+												className={`
+              bg-background caret-primary
+
+              focus-visible:outline-none focus-visible:ring-0
+            `}
+												{...field}
+											/>
+										</FormControl>
+									</FormItem>
+								)}
+							/>
+							<FormCombobox
+								name='city'
+								label='Khu vực'
+								isLoading={isPending}
+								control={form.control}
+								form={form}
+								initalData='Thành phố'
+								items={cities}
+								isMessage
+							/>
+						</div>
+						<div className='flex w-full items-center justify-center'>
+							<FormField
+								name='tnc'
+								control={form.control}
+								render={({ field }) => (
+									<FormItem
+										className={`flex flex-row items-start space-x-3 space-y-0 p-4`}
+									>
+										<FormControl>
+											<Checkbox
+												checked={field.value}
+												onCheckedChange={field.onChange}
+											/>
+										</FormControl>
+										<div className='space-y-1 leading-none'>
+											<FormLabel className='text-sm text-foreground/70'>
+												Bằng việc xác nhận, bạn đồng ý với
+											</FormLabel>
+										</div>
+									</FormItem>
+								)}
+							/>
+						</div>
+						<div className='flex w-full items-center justify-center'>
+							<Button
+								type='submit'
+								disabled={!form.getFieldState('tnc').isDirty || isPending}
+								className={`
+          rounded-full bg-gradient-to-tr from-primary from-30% to-[#e81e25]
+          px-12 py-6 text-base font-semibold uppercase transition-colors
+          duration-200 ease-out
+
+          active:form-10%
+
+          hover:from-60%
+        `}
+							>
+								Mở thẻ ngay
+							</Button>
+						</div>
 					</div>
 				</form>
 			</Form>

@@ -6,7 +6,7 @@ const CreditCardLayout: FC<PropsWithChildren> = ({ children }) => {
 	return (
 		<main className='h-full'>
 			<Header />
-			<div className='mt-8'>{children}</div>
+			<div className='mt-8 flex justify-center'>{children}</div>
 		</main>
 	)
 }

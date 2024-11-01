@@ -10,7 +10,7 @@ const TermPolicy = () => {
 					variant='link'
 					className='p-0 text-xs'
 				>
-					- Điều khoản sử dụng dịch vụ FIMI;
+					Điều khoản sử dụng dịch vụ FIMI;
 				</Button>
 			}
 		>

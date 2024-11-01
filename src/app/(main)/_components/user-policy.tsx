@@ -10,7 +10,7 @@ const UserPolicy = () => {
 					variant='link'
 					className='p-0 text-xs'
 				>
-					- Chính sách bảo vệ dữ liệu cá nhân.
+					Chính sách bảo vệ dữ liệu cá nhân.
 				</Button>
 			}
 		>

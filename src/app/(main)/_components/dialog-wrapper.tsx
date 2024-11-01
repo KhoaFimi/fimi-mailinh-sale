@@ -27,7 +27,9 @@ const DialogWrapper: FC<DialogWrapperProps> = ({
 			<DialogTrigger asChild>{trigger}</DialogTrigger>
 			<DialogContent className='max-h-[600px] w-[380px] overflow-y-scroll'>
 				<DialogHeader>
-					<DialogTitle className='px-4 uppercase'>{title}</DialogTitle>
+					<DialogTitle className='px-4 text-center uppercase'>
+						{title}
+					</DialogTitle>
 					<DialogDescription className={cn({ ['hidden']: !description })}>
 						{description}
 					</DialogDescription>
