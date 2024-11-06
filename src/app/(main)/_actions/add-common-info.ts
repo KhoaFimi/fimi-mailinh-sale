@@ -13,7 +13,7 @@ export const createOrder = async (commonInfoSchema: CommonInfoSchema) => {
 
 	await sheets.spreadsheets.values.append({
 		spreadsheetId: process.env.SHEET_ID,
-		range: `${process.env.SHEET_NAME}!A2:L1`,
+		range: `${process.env.SHEET_1}`,
 		valueInputOption: 'USER_ENTERED',
 		requestBody: {
 			values: [
@@ -22,9 +22,7 @@ export const createOrder = async (commonInfoSchema: CommonInfoSchema) => {
 					'',
 					commonInfoSchema.publisherCode,
 					'',
-					'',
 					commonInfoSchema.fullname,
-					'',
 					`'${commonInfoSchema.phone}`,
 					commonInfoSchema.email,
 					commonInfoSchema.city

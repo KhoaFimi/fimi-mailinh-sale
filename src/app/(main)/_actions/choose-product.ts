@@ -18,7 +18,7 @@ export const chooseProduct = async ({
 		data: { values: data }
 	} = await sheets.spreadsheets.values.get({
 		spreadsheetId: process.env.SHEET_ID,
-		range: 'TEST_DATA'
+		range: process.env.SHEET_1
 	})
 
 	if (!data) throw Error('Not found')
@@ -27,11 +27,7 @@ export const chooseProduct = async ({
 
 	if (rangeToUpdate === -1) throw Error('Not found')
 
-	const timeStamp = formatInTimeZone(
-		new Date(),
-		'Asia/Ho_Chi_Minh',
-		'QQQ E LL/dd/yyyy - HH:mm:ss'
-	)
+	const timeStamp = formatInTimeZone(new Date(), 'Asia/Ho_Chi_Minh', 'LLL d,y')
 
 	await sheets.spreadsheets.values.batchUpdate({
 		spreadsheetId: process.env.SHEET_ID,
@@ -39,12 +35,12 @@ export const chooseProduct = async ({
 			valueInputOption: 'RAW',
 			data: [
 				{
-					range: `${process.env.SHEET_NAME}!B${rangeToUpdate + 1}`,
+					range: `${process.env.SHEET_1}!B${rangeToUpdate + 1}`,
 					values: [[timeStamp]]
 				},
 				{
-					range: `${process.env.SHEET_NAME}!D${rangeToUpdate + 1}`,
-					values: [[productId]]
+					range: `${process.env.SHEET_1}!D${rangeToUpdate + 1}`,
+					values: [[productId.includes('vpbankcc') ? 'vpbankcc' : productId]]
 				}
 			]
 		}

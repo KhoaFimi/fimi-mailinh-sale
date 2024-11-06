@@ -5,7 +5,7 @@ const MainLayout: FC<PropsWithChildren> = ({ children }) => {
 		<main className='flex h-screen items-center justify-center'>
 			<div
 				className={`
-      h-full w-full overflow-y-auto
+      h-full w-full overflow-y-auto bg-gray-200/20
 
       sm:w-[400px] sm:rounded-xl sm:border sm:border-foreground/20 sm:shadow-md
     `}

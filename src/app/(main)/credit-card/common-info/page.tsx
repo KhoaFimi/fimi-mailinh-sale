@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import Footer from '@/app/(main)/_components/footer'
 import CommonInfoForm from '@/app/(main)/_components/form/common-info-form'
 import SecurityPolicy from '@/app/(main)/_components/security-policy'
@@ -6,15 +8,15 @@ import UserPolicy from '@/app/(main)/_components/user-policy'
 
 const CommonInfoPage = () => {
 	return (
-		<div className='flex w-full flex-col items-center space-y-6'>
-			<h2
-				className={`
-      h-fit bg-gradient-to-r from-primary to-red-700 bg-clip-text text-2xl
-      font-bold uppercase text-transparent
-    `}
-			>
-				Thông tin cơ bản
-			</h2>
+		<div className={`relative flex w-full flex-col items-center space-y-6`}>
+			<Image
+				src='/fill.png'
+				alt='fill'
+				width={6642}
+				height={8802}
+				className={`absolute right-6 top-4 z-40 w-20`}
+			/>
+
 			<CommonInfoForm />
 			<div className={`flex w-full flex-col items-center justify-start px-6`}>
 				<SecurityPolicy />
