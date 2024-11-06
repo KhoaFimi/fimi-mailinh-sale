@@ -3,8 +3,8 @@ import { CardType } from '@/types'
 export const vpbank = (code: string) =>
 	[
 		{
-			id: 'vpbankcc-prime',
-			name: 'Vpbank - Prime+',
+			id: 'vpbankcc-stepup',
+			name: 'Vpbank - StepUp',
 			group: 'vp',
 			link: `https://cards.vpbank.com.vn/?utm_campaign=JarvisCustCC.Partner&utm_source=FiMi&utm_medium=${code}`,
 			priority: 1,

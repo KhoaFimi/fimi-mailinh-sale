@@ -152,7 +152,7 @@ const Product: FC<CardType & ProductsProps> = ({ orderId, ...product }) => {
 					height={629}
 					alt={product.info.image}
 					className={`
-       aspect-[2/3] h-40 w-28 cursor-pointer transition-all duration-300
+       aspect-[2/3] h-44 w-28 cursor-pointer transition-all duration-300
        ease-out
 
        hover:scale-105 hover:shadow-xl
