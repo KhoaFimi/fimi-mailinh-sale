@@ -1,5 +1,6 @@
 import '@/app/globals.css'
 
+import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import { FC, PropsWithChildren } from 'react'
@@ -29,6 +30,7 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => {
     `}
 			>
 				<QueryProvider>{children}</QueryProvider>
+				<Analytics />
 			</body>
 		</html>
 	)
