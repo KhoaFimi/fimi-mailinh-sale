@@ -4,7 +4,7 @@ export const vpbank = (code: string) =>
 	[
 		{
 			id: 'vpbankcc-prime',
-			name: 'Vpbank credit card - Prime+',
+			name: 'Vpbank - Prime+',
 			group: 'vp',
 			link: `https://cards.vpbank.com.vn/?utm_campaign=JarvisCustCC.Partner&utm_source=FiMi&utm_medium=${code}`,
 			priority: 1,
@@ -22,7 +22,7 @@ export const vpbank = (code: string) =>
 		},
 		{
 			id: 'vpbankcc-lady',
-			name: 'Vpbank credit card - Lady',
+			name: 'Vpbank - Lady',
 			group: 'vp',
 			link: `https://cards.vpbank.com.vn/?utm_campaign=JarvisCustCC.Partner&utm_source=FiMi&utm_medium=${code}`,
 			priority: 1,
@@ -40,7 +40,7 @@ export const vpbank = (code: string) =>
 		},
 		{
 			id: 'vpbankcc-genz',
-			name: 'Vpbank credit card - GenZ',
+			name: 'Vpbank - GenZ',
 			group: 'vp',
 			link: `https://cards.vpbank.com.vn/?utm_campaign=JarvisCustCC.Partner&utm_source=FiMi&utm_medium=${code}`,
 			priority: 1,
@@ -58,7 +58,7 @@ export const vpbank = (code: string) =>
 		},
 		{
 			id: 'vpbankcc-MC2',
-			name: 'Vpbank credit card - MC2',
+			name: 'Vpbank - MC2',
 			group: 'vp',
 			link: `https://cards.vpbank.com.vn/?utm_campaign=JarvisCustCC.Partner&utm_source=FiMi&utm_medium=${code}`,
 			priority: 1,
@@ -76,7 +76,7 @@ export const vpbank = (code: string) =>
 		},
 		{
 			id: 'vpbankcc-travel',
-			name: 'Vpbank credit card - Travel',
+			name: 'Vpbank - Travel',
 			group: 'vp',
 			link: `https://cards.vpbank.com.vn/?utm_campaign=JarvisCustCC.Partner&utm_source=FiMi&utm_medium=${code}`,
 			priority: 1,

@@ -21,7 +21,7 @@ const Products: FC<ProductsProps> = ({ orderId }) => {
 		<div className={`flex flex-col items-center space-y-4 pb-4`}>
 			<h2
 				className={`
-      w-fit bg-gradient-to-tr from-primary from-50% to-primary/50 bg-clip-text
+      w-fit bg-gradient-to-r from-[#e65524] to-[#f2af1c] bg-clip-text
       text-center text-2xl font-bold uppercase text-transparent
     `}
 			>
@@ -142,7 +142,7 @@ const Product: FC<CardType & ProductsProps> = ({ orderId, ...product }) => {
 					height={303}
 					alt='hot'
 					className={cn(
-						'absolute -right-7 top-0.5 z-50 w-12 -rotate-[24deg] animate-pulse',
+						'absolute -right-7 top-0.5 z-50 w-14 -rotate-[24deg] animate-pulse',
 						{ ['hidden']: product.priority > 1 }
 					)}
 				/>
@@ -152,34 +152,34 @@ const Product: FC<CardType & ProductsProps> = ({ orderId, ...product }) => {
 					height={629}
 					alt={product.info.image}
 					className={`
-       aspect-[2/3] h-40 w-28 cursor-pointer shadow-md transition-all
-       duration-300 ease-out
+       aspect-[2/3] h-40 w-28 cursor-pointer transition-all duration-300
+       ease-out
 
        hover:scale-105 hover:shadow-xl
      `}
 				/>
 			</div>
-			<div className='flex flex-1 flex-col gap-2'>
+			<div className='flex flex-1 flex-col gap-1'>
 				<div
 					className={cn(
-						`flex flex-1 flex-col justify-between rounded-md transparent p-2 text-sm`
+						`flex flex-col space-y-2 rounded-md px-2 pb-0 pt-5 transparent text-sm`
 					)}
 				>
-					<p className='font-bold'>
+					<p className='text-justify text-xs font-bold'>
 						Tên thẻ: <span className='font-normal'>{product.name}</span>
 					</p>
-					<p className='font-bold'>
+					<p className='text-justify text-xs font-bold'>
 						Hạn mức:{' '}
 						<span className='font-normal'>
 							lên đến {product.info.creditLimt} triệu đồng
 						</span>
 					</p>
-					<p className='font-bold'>
+					<p className='text-justify text-xs font-bold'>
 						Tính năng nổi bật:{' '}
 						<span className='font-normal'>{product.info.specialFeatures}</span>
 					</p>
 				</div>
-				<div className='flex w-full items-center justify-center'>
+				<div className={`mt-4 flex w-full items-center justify-center py-4`}>
 					<Button
 						disabled={isPending}
 						className={`
