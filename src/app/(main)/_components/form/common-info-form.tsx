@@ -212,7 +212,7 @@ const CommonInfoForm = () => {
 										</FormControl>
 										<div className='space-y-1 leading-none'>
 											<FormLabel className='text-sm text-foreground/70'>
-												Bằng việc xác nhận, bạn đồng ý với
+												Bằng việc chọn mở thẻ ngay, bạn đồng ý với
 											</FormLabel>
 										</div>
 									</FormItem>

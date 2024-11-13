@@ -57,8 +57,7 @@ const Footer = () => {
 							<FaHome className='size-4 text-primary' />
 						</div>
 						<p className='text-xs font-semibold text-white'>
-							CN HCM: Tầng 1, Tòa Nhà H3, 384 Hoàng Diệu, Phường 6, Quận 4,
-							TP.HCM.
+							Tầng 1, Tòa Nhà H3, 384 Hoàng Diệu, Phường 6, Quận 4, TP.HCM.
 						</p>
 					</div>
 
@@ -91,7 +90,7 @@ const Footer = () => {
 			</div>
 			<div className='p-2 text-xs font-bold tracking-tight'>
 				<p className='text-foreground/50'>
-					Copyright © RUBY Agency., Ltd, all right reserved.
+					Copyright © FIMI TECH Co., Ltd, all right reserved.
 				</p>
 			</div>
 		</div>
