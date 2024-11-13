@@ -41,6 +41,7 @@ const Footer = () => {
 							<Link
 								href={brand.link}
 								key={brand.image}
+								target='_blank'
 							>
 								<Image
 									src={brand.image}
@@ -51,6 +52,19 @@ const Footer = () => {
 								/>
 							</Link>
 						))}
+						<Link
+							href='https://zalo.me/349258862182110585'
+							className='flex items-center justify-center rounded-full bg-white p-1.5'
+							target='_blank'
+						>
+							<Image
+								src='/brand/zalo.png'
+								alt='zalo-logo'
+								width={512}
+								height={512}
+								className='w-5'
+							/>
+						</Link>
 					</div>
 					<div className='flex items-center space-x-2'>
 						<div className='rounded-full bg-white p-1.5 shadow-md'>
