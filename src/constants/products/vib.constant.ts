@@ -146,7 +146,7 @@ export const vib = (code: string) =>
 			id: 'vibfin',
 			group: 'vib',
 			name: 'VIB-Financial Free',
-			link: `https://wwww.vib.com.vn/vn/the-tin-dung/dang-ky/buoc-1?card_type=vib-financial-free&utm_source=REFERCARD&utm_medium=REFER_CARD&utm_content=Affiliate_FIMIVIB-${code}`,
+			link: `https://www.vib.com.vn/vn/the-tin-dung/dang-ky/buoc-1?card_type=vib-financial-free&utm_source=REFERCARD&utm_medium=REFER_CARD&utm_content=Affiliate_FIMIVIB-${code}`,
 			priority: 4,
 			condition: {
 				age: 20,
